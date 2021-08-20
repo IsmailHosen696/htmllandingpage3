@@ -1,0 +1,135 @@
+.services {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.services_text {
+  max-width: 900px;
+  margin: 10em auto;
+  margin-bottom: 2em;
+  h1 {
+    text-align: center;
+    padding: 0 1em;
+    font-weight: 400;
+    color: #333;
+  }
+}
+.services_sec {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 2em auto;
+}
+.services_box {
+  background: #fafafa;
+  width: 500px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0.1em;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 30%;
+    margin: 1em 0;
+  }
+  h1 {
+    font-weight: 200;
+    font-size: 1em;
+  }
+}
+.bg_fblack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  justify-content: center;
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1.5em 0;
+    h1 {
+      color: #333;
+      font-weight: 400;
+    }
+    button {
+      color: #333;
+      border: 2px solid #333;
+      font-size: 0.9em;
+      height: 2.8em;
+      margin-left: 1em;
+      border-radius: 1.5em;
+      width: 10em;
+      background: transparent;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      transition: 0.3s all;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #333;
+      color: #fff;
+    }
+  }
+}
+.bg_fixed {
+  width: 100%;
+  height: 40vh;
+  background: url("../../img/keith-misner-h0Vxgz5tyXA-unsplash.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    text-transform: lowercase;
+  }
+}
+@media screen and (max-width: 770px) {
+  .bg_fixed {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bg_fixed {
+    height: 70vh;
+    h1 {
+      font-size: 1em;
+      padding: 0 1em;
+    }
+  }
+  .bg_fblack {
+    .h1 {
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 1em;
+      }
+      span {
+        font-size: 0.7em;
+        margin-top: 1em;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+  .services_box {
+    width: 100%;
+  }
+}

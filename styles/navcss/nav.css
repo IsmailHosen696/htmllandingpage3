@@ -1,0 +1,266 @@
+.nav-main {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+}
+
+.nav-cotainer {
+  max-width: 1600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+.nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 0.5em;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.nav-logo .fa-bars {
+  display: none;
+}
+
+.nav-menu-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav-menu-ul a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 0.5em;
+  cursor: pointer;
+  font-size: 0.9em;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.nav-menu-ul a:hover {
+  color: #1abc9c;
+}
+
+.herosection {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  margin-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.herosection .overlay {
+  background: url("../../img/hero.jpg") center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.herosection .overlay .overly_span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.5;
+}
+
+.hero-container {
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero-container p {
+  color: #444;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0 1em;
+}
+
+.headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.headings h1 {
+  padding: 0 0.2em;
+  letter-spacing: 2px;
+  color: #2b2b2b;
+}
+
+.buttons {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons .btn1 {
+  padding: 0.7em 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0.5em;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+}
+
+.buttons .btn1:hover {
+  background: #1abc9c;
+}
+
+.buttons .btn2 {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  padding: 0.7em 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0.5em;
+  background: transparent;
+  color: #444;
+  cursor: pointer;
+  font-weight: 500;
+  border: 2px solid #444;
+  border-radius: 3px;
+}
+
+.buttons .btn2:hover {
+  background: #444;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-cotainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    height: 3em;
+    background: #fff;
+  }
+  .nav-logo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0.5em;
+    width: 100%;
+  }
+  .nav-logo .fas {
+    display: block;
+    cursor: pointer;
+    font-size: 1.3em;
+  }
+  .nav-menu {
+    width: 100%;
+    display: none;
+  }
+  .nav-menu .nav-menu-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0.5em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #fff;
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  .nav-menu .nav-menu-ul li {
+    padding: 0.5em;
+  }
+  .nav-menu .nav-menu-ul a {
+    font-weight: 500;
+  }
+  .active {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .herosection {
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

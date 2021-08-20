@@ -1,0 +1,204 @@
+.services {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services_text {
+  max-width: 900px;
+  margin: 10em auto;
+  margin-bottom: 2em;
+}
+
+.services_text h1 {
+  text-align: center;
+  padding: 0 1em;
+  font-weight: 400;
+  color: #333;
+}
+
+.services_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em auto;
+}
+
+.services_box {
+  background: #fafafa;
+  width: 500px;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services_box img {
+  width: 30%;
+  margin: 1em 0;
+}
+
+.services_box h1 {
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.bg_fblack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg_fblack .h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1.5em 0;
+}
+
+.bg_fblack .h1 h1 {
+  color: #333;
+  font-weight: 400;
+}
+
+.bg_fblack .h1 button {
+  color: #333;
+  border: 2px solid #333;
+  font-size: 0.9em;
+  height: 2.8em;
+  margin-left: 1em;
+  border-radius: 1.5em;
+  width: 10em;
+  background: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.bg_fblack .h1 button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.bg_fixed {
+  width: 100%;
+  height: 40vh;
+  background: url("../../img/keith-misner-h0Vxgz5tyXA-unsplash.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg_fixed h1 {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+}
+
+.bg_fixed p {
+  text-align: center;
+  color: #fff;
+  margin-top: 1em;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 770px) {
+  .bg_fixed {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg_fixed {
+    height: 70vh;
+  }
+  .bg_fixed h1 {
+    font-size: 1em;
+    padding: 0 1em;
+  }
+  .bg_fblack .h1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bg_fblack .h1 h1 {
+    font-size: 1em;
+  }
+  .bg_fblack .h1 span {
+    font-size: 0.7em;
+    margin-top: 1em;
+    margin-left: 0;
+    text-align: center;
+  }
+  .services_box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=services.css.map */
